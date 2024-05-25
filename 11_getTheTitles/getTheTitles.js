@@ -1,4 +1,8 @@
-const getTheTitles = function() {
+const getTheTitles = function(arr) {
+    return arr.reduce((titles,current)=>{
+        titles.push(current.title);
+        return titles;
+    },[]);
 
 };
 
